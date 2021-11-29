@@ -38,7 +38,7 @@ def main():
                         pass
 
     for key in list(matches.keys()):
-        print(key + " "*(15-len(key)) +": " + matches[key][matched_string])
+        print("{}{}: {}".format(key, " "*(15-len(key)), matches[key][matched_string]))
     print("Total number of files searched :" + str(file_count))
     print("Total number of matches        :" + str(len(matches.keys())))
 
